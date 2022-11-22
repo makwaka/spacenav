@@ -1,0 +1,120 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* Variables */
+:root{
+    --nav-primary-color: #03A47E;
+    --nav-background-color: #FFFFFF;;
+    --nav-text-color: #252533;
+    -underline-text-color:#323232;
+    --nav-background:#ffffff;
+}
+
+body {
+    font-family: 'Poppins', sans-serif!important;
+    width: 100vw;
+}
+
+
+/* navbar styles start */
+.nav-bar, .main{
+background: var(--nav-background-color);
+height: 80px;
+width: 100vw;
+margin-right:10px;
+display: flex;
+justify-content: space-between;
+}
+
+label.logo{
+line-height: 80px;
+padding: 0 10px;
+}
+
+#logo-image{
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+
+nav ul{
+    float: right;
+    margin-right: 10px;
+    letter-spacing: 1px;
+    display: flex;
+}
+
+ nav ul li{
+display: inline-block;
+line-height: 80px;
+ }
+
+ nav ul li a{
+    color: var(--nav-text-color);
+    font-size: 15px;
+    margin: 0 10px;
+    cursor: pointer;
+    user-select: none;
+ }
+
+ nav ul li a:hover{
+    background: var(--nav-primary-color);
+    border-radius: 4px;
+ }
+
+ .btn-container {
+    /* margin-right: 100px; */
+    line-height: 80px;
+ }
+button{
+    margin: 0 4px;
+    border-radius: 4px;
+    font-size: 15px;
+    border: 1px solid #03A47E;
+    padding: 10px;
+    color: var(--nav-primary-color);
+    background: var(--nav-background);
+ }
+
+ #sign{
+    background: var(--nav-primary-color);
+    color: var(--nav-background);
+ }
+
+ /* Mobile responsiveness */
+ @media screen and (max-width:850px){
+    nav ul li a{
+        font-size: 6px;
+        margin: 0 3px;
+    }
+    #logo-image{
+        width: 30px;
+        height: 30px;
+    }
+    button{
+        padding: 3px;
+    }
+
+     .nav-bar,.main{
+        min-width: 100vw;
+     }
+ }
+
+ @media screen and (max-width:390px){
+    .nav-bar, .main{
+        min-width: 100vw;
+        width: 400px;
+    }
+    nav ul li a{
+        font-size: 6px;
+    }
+ }
+
+ /* navbar styles end */
